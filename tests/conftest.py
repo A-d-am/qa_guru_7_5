@@ -7,7 +7,7 @@ from selenium import webdriver
 def driver_management():
     browser.config.base_url = 'https://todomvc.com/examples/emberjs'
     driver_options = browser.config.driver_options = webdriver.FirefoxOptions()
-    driver_options.add_argument('--headless')
+    # driver_options.add_argument('--headless')
     browser.config.driver_options = driver_options
 
     yield
