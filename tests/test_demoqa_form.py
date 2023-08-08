@@ -32,7 +32,7 @@ def test_fill_and_send_form():
     # hobbies
     browser.element('.custom-checkbox [for = "hobbies-checkbox-1"]').should(have.text('Sports')).click()
     # upload picture
-    browser.element('#uploadPicture').send_keys(os.path.abspath('test_files/test_pict.png'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('resources/test_pict.png'))
     # current address
     browser.element('#currentAddress').should(be.blank).type('Current address').press_enter()
     # state
